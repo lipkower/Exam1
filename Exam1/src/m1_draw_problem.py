@@ -104,6 +104,7 @@ def draw_a_picture(point, n, color, window):
         circle_new.fill_color = color
         circle_new.attach_to(window)
         window.render(0.5)
+# I know I need an n for the circle_new object but I have absolutely no clue where to put it. I've tried everywhere.
 
 
 
