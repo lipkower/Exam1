@@ -99,12 +99,11 @@ def draw_a_picture(point, n, color, window):
     circle.fill_color = color
     circle.attach_to(window)
     window.render()
-    for k in range(n):
-        circle_new = rg.Circle((rg.Point(point.x + 25, point.y + 15)), 50)
+    for k in range(1, n):
+        circle_new = (rg.Circle((rg.Point((point.x + 25) * n, (point.y + 15) * n)), 50))
         circle_new.fill_color = color
-        window.render(.5)
         circle_new.attach_to(window)
-
+        window.render(0.5)
 
 
 
