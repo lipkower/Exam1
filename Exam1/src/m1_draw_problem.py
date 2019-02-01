@@ -103,7 +103,9 @@ def draw_a_picture(point, n, color, window):
         circle_new = rg.Circle((rg.Point(point.x + 25, point.y + 15)), 50)
         circle_new.fill_color = color
         window.render(.5)
-    window.close_on_mouse_click()
+        circle_new.attach_to(window)
+
+
 
 
 main()
