@@ -190,9 +190,10 @@ def multiply_primes(m,n):
     ###############################################################################
     total = 0
     count_primes(m, n)
-    for k in range(m, n):
-        is_prime(m) * is_prime(n)
+    for k in range(m, n, 1):
+        total = total + 1
     return total
+# I know I use count_primes but I can't figure out how to get those to multiply and I want to cry
 
 
 main()
